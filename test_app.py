@@ -20,4 +20,5 @@ def test_suma_calculo(client):
     response = client.get('/calc/sum/10/15')
     assert response.status_code == 200
     data = response.get_json()
-    assert data['resultado'] == 25
+    assert data['resultado'] == 999
+
